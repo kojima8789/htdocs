@@ -19,8 +19,18 @@
 
         $num = 5;
         if(chkkisu($num)){
-            echo '奇数です';
+            echo '奇数です<br>';
         }
+
+        function syouhizei($kingaku,$zeiritu="3"){
+            $yyy = $kingaku * $zeiritu;
+            $yyy = round($yyy);
+            return($yyy);
+           
+
+        }
+        echo syouhizei(932,1.08).'円';
+        echo syouhizei(932).'円';
         ?>
     </body>
 </html>        
